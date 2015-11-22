@@ -21,3 +21,16 @@ $ mvn clean
 $ mvn package
 $ java -jar target/SpringBootWeb-1.0.0-SNAPSHOT.jar
 ```
+
+###API
+```
+$ curl http://localhost:8080/api/customers -v -X GET
+```
+
+```
+$ curl http://localhost:8080/api/customers/1 -v -X GET
+```
+
+```
+$ curl http://localhost:8080/api/customers -v -X POST -H "Content-Type: application/json" -d "{\"firstName\" : \"Tamako\", \"LastName\" : \"Nobi\"}"
+```
